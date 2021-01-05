@@ -52,7 +52,7 @@ removed this from the config.ru
 # end
 ```
 
-![Image of Localhost running sinatra](https://drive.google.com/file/d/1b7sy7x80YJs7tH6bwFgO4InEbsa_ZiDF/view?usp=sharing)
+![Image of localhost](https://octodex.github.com/images/yaktocat.png)
 
 ********************
 ## Environments Setup
