@@ -49,6 +49,7 @@ GEM
       ruby2_keywords (~> 0.0.1)
     nokogiri (1.11.0-x86_64-darwin)
       racc (~> 1.4)
+    pg (1.2.3)
     pry (0.13.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -94,7 +95,6 @@ GEM
     sinatra-activerecord (2.0.21)
       activerecord (>= 4.1)
       sinatra (>= 1.0)
-    sqlite3 (1.4.2)
     thin (1.8.0)
       daemons (~> 1.0, >= 1.0.9)
       eventmachine (~> 1.0, >= 1.0.4)
@@ -119,6 +119,7 @@ DEPENDENCIES
   bcrypt
   capybara
   database_cleaner!
+  pg
   pry
   rack-test
   rake
@@ -127,7 +128,6 @@ DEPENDENCIES
   shotgun
   sinatra
   sinatra-activerecord
-  sqlite3
   thin
   tux
 
