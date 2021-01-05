@@ -52,13 +52,17 @@ removed this from the config.ru
 # end
 ```
 
-[Add screenshot after pushing to github]
+
 
 ********************
-## Add Repo to Github with Flatiron Requirements
+## Environments Setup
+
+### Github with spec.md requirement from Flatiron
+-[x] Add Repo to Github  https://github.com/mrsdo/sinatra-cms-app-assessment]
+-[x] Add Flatiron Requirements 'specs.md' file readme.md becomes requirements.md
 
 
 
 ********************
 ### Resources
-[https://dev.to/ethanmgustafson/creating-an-api-using-sinatra-2a48]
+https://dev.to/ethanmgustafson/creating-an-api-using-sinatra-2a48
