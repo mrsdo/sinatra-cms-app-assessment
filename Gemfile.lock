@@ -86,7 +86,6 @@ GEM
     sinatra-activerecord (2.0.21)
       activerecord (>= 4.1)
       sinatra (>= 1.0)
-    sqlite3 (1.4.2)
     thin (1.8.0)
       daemons (~> 1.0, >= 1.0.9)
       eventmachine (~> 1.0, >= 1.0.4)
@@ -104,6 +103,7 @@ GEM
       nokogiri (~> 1.8)
 
 PLATFORMS
+  ruby
   x86_64-darwin-20
 
 DEPENDENCIES
@@ -120,7 +120,6 @@ DEPENDENCIES
   shotgun
   sinatra
   sinatra-activerecord
-  sqlite3
   thin
   tux
 

@@ -54,7 +54,6 @@
     <orderEntry type="library" scope="PROVIDED" name="shotgun (v0.9.2, RVM: ruby-2.7.2 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sinatra (v2.1.0, RVM: ruby-2.7.2 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sinatra-activerecord (v2.0.21, RVM: ruby-2.7.2 [global]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="sqlite3 (v1.4.2, RVM: ruby-2.7.2 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thin (v1.8.0, RVM: ruby-2.7.2 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thread_safe (v0.3.6, RVM: ruby-2.7.2 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tilt (v2.0.10, RVM: ruby-2.7.2 [global]) [gem]" level="application" />
