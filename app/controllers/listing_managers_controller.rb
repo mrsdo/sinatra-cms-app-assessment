@@ -2,6 +2,7 @@ class ListingManagersController < ApplicationController
 
   # GET: /listing_manager
   get "/listing_manager" do
+    @listings = ListingManager.all
     erb :"/listing_manager/index.html"
   end
 
@@ -34,4 +35,6 @@ class ListingManagersController < ApplicationController
   delete "/listing_manager/:id/delete" do
     redirect "/listing_manager"
   end
+
+
 end

@@ -10,10 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_08_124530) do
+ActiveRecord::Schema.define(version: 2021_01_08_125154) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "agents", force: :cascade do |t|
+    t.string "first_name"
+    t.string "last_name"
+    t.string "username"
+    t.string "email"
+    t.string "company"
+    t.string "phone"
+    t.string "listings"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "authentications", force: :cascade do |t|
     t.string "user_name"
@@ -24,25 +36,36 @@ ActiveRecord::Schema.define(version: 2021_01_08_124530) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "listing_manager", force: :cascade do |t|
-    t.string "name"
-    t.string "tag_name"
-    t.string "status"
+  create_table "listing_managers", force: :cascade do |t|
+    t.text "name"
+    t.text "tag_name"
+    t.text "status"
     t.date "first_listed_date"
-    t.integer "num_bedrooms"
-    t.integer "num_bathrooms"
-    t.string "summary"
-    t.integer "sq_footage"
-    t.integer "asking_price"
-    t.string "photos1"
+    t.text "num_bedrooms"
+    t.text "num_bathrooms"
+    t.text "summary"
+    t.text "sq_footage"
+    t.money "asking_price", scale: 2
+    t.text "photos1"
     t.string "photos2"
     t.string "photos3"
     t.string "photos4"
-    t.string "agent"
-    t.string "phone"
-    t.string "company"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.bigint "agent"
+    t.string "phone", limit: 35
+    t.bigint "company"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
+  create_table :companies do |t|
+    t.string :name
+    t.string :address
+    t.string :logo
+    t.string :agents
+    t.string :listings
+
+    t.timestamps null: false
+    end
+
+  add_foreign_key "listing_managers", "agents", column: "agent", name: "agent_id"
 end

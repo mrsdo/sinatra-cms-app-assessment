@@ -11,9 +11,4 @@ class ApplicationController < Sinatra::Base
     erb :start
   end
 
-  # GET: /listing_manager
-  get "/listing_manager" do
-    erb :"/listing_manager/index.html"
-  end
-
 end
