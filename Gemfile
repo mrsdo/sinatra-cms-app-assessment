@@ -1,12 +1,29 @@
 # frozen_string_literal: true
 
-source "https://rubygems.org"
+# My Sinatra CMS APP gemfile
+source 'https://rubygems.org'
 
-# Specify your gem's dependencies in listing_manager.gemspec
-gemspec
+git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-gem "rake", "~> 13.0"
+ruby '2.7.2'
 
-gem "rspec", "~> 3.0"
+gem 'activerecord', '~> 5.2.3', require: 'active_record'
+gem 'bcrypt'
+gem 'pg'
+gem 'pry'
+gem 'rake'
+gem 'require_all'
+gem 'shotgun'
+gem 'sinatra'
+gem 'sinatra-activerecord', require: 'sinatra/activerecord'
+gem 'sqlite3'
+gem 'thin'
+gem 'tux'
 
-gem "rubocop", "~> 0.80"
+
+group :test do
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'rack-test'
+  gem 'rspec'
+end
