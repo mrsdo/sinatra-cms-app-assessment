@@ -2,7 +2,7 @@ class AgentsController < ApplicationController
 
   # GET: /agents
   get "/agents" do
-    erb :"/agents/index.html"
+    erb :"/agents/index.erb"
   end
 
   # GET: /agents/new

@@ -2,7 +2,7 @@ class CompaniesController < ApplicationController
 
   # GET: /companies
   get "/companies" do
-    erb :"/companies/index.html"
+    erb :"/companies/index.erb"
   end
 
   # GET: /companies/new

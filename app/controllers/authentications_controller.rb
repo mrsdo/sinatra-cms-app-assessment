@@ -2,7 +2,7 @@ class AuthenticationsController < ApplicationController
 
   # GET: /authentications
   get "/authentications" do
-    erb :"/authentications/index.html"
+    erb :"/authentications/index.erb"
   end
 
   # GET: /authentications/new

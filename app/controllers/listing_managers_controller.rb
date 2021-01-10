@@ -1,9 +1,10 @@
 class ListingManagersController < ApplicationController
+  # before_action :set_listings, only: %i[show edit update delete]
 
   # GET: /listing_manager
   get "/listing_manager" do
-    @listings = ListingManager.all
-    erb :"/listing_manager/index.html"
+    # @listings = ListingManager.all
+    erb :"/listing_manager/index.erb"
   end
 
   # GET: /listing_manager/new
@@ -13,6 +14,7 @@ class ListingManagersController < ApplicationController
 
   # POST: /listing_manager
   post "/listing_manager" do
+    # listings = ListingManager.new(params[:listings])
     redirect "/listing_manager"
   end
 
@@ -36,5 +38,22 @@ class ListingManagersController < ApplicationController
     redirect "/listing_manager"
   end
 
+  def destroy
+    # @listing.destroy
+    # respond_to do |format|
+    #   format.html { redirect listings_url, notice: 'Listing was successfully removed.' }
+
+  end
+
+  private
+  def get_listings
+    # @listing = ListingManager.find(params[:id])
+  end
+
+
+  # Only allow a list of trusted parameters through.
+  def listing_params
+
+  end
 
 end
