@@ -1,0 +1,35 @@
+<h1>Show All Roles</h1>
+<section id="page">
+  <table class="table-striped">
+    <thead>
+    <tr>
+      <th>ID. </th>
+      <th>Role Name</th>
+      <th>Created At</th>
+      <th>Updated At</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <% @role.each do |role| %>
+      <tr>
+        <td><%= role.id.to_s %></td>
+        <td><%= role.role_name %></td>
+        <td><%= role.created_at.to_s %></td>
+        <td><%= role.updated_at.to_s %></td>
+        <td><a href='/roles/<%= role.id%>/edit'>Edit</a></td>
+        <td> <a href="<%= @delete %>/roles/<%= role.id %> ">Delete</a></td>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+  <nav>
+    <ol>
+      <li><a href="/roles">Roles Home</a></li>
+      <li><a href="/roles/new">New</a></li>
+
+    </ol>
+  </nav>
+</section>

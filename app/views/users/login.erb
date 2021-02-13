@@ -1,0 +1,14 @@
+<h3>Log In</h3><br>
+<!-- Print error message -->
+<% if !!@error %>
+  <div class="alert">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+    <strong>Error!</strong> <%= @error %>
+  </div>
+<% end %>
+
+<form action='/login' method="POST">
+  <input type="text" name="username" placeholder="username">
+  <input type="password" name="password" placeholder="password">
+  <button class="btn btn-primary d-inline" type="submit">Log in</button>
+</form>

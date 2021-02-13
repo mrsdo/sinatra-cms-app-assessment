@@ -1,0 +1,31 @@
+<h1>Updated Roles</h1>
+<section id="page">
+  <table class="table-striped">
+    <thead>
+    <tr>
+      <th>ID. </th>
+      <th>Role Name</th>
+      <th>Created At</th>
+      <th>Updated</th>
+    </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td><%= role.id%></td>
+        <td><%= role.role_name %></td>
+        <td><%= role.created_at.to_s %></td>
+        <td><%= role.updated_at.to_s %></td>
+      </tr>
+    </tbody>
+  </table>
+  <nav>
+    <ol>
+      <li><a href="/roles">Roles Home</a></li>
+      <li><a href="/roles/show">View</a></li>
+      <li><a href="/roles/new">New</a></li>
+      <li><a href="/roles/edit">Edit</a></li>
+
+    </ol>
+  </nav>
+</section>
