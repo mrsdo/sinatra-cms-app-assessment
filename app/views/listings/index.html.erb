@@ -1,0 +1,13 @@
+<h1></h1>
+<h1>Welcome to Your Listings List</h1>
+  <ol>
+  <% Array(@listings).each do |listing|%>
+    <li>
+      <a href="/listings/<%= listing.id%>">
+        <%=listing.name%>
+      </a>
+    </li>
+    <%end%>
+  </ol>
+<br />
+  <!-- <input type="submit" value="signout"> -->

@@ -1,0 +1,15 @@
+
+<h1>Edit your personal information</h1>
+<h3>Name: <%= current_user.fname %></h3>
+<h3>Email: <%= current_user.email %></h3>
+
+  <form class="form" action="/users/<%= @user.id %>" method="post">
+
+  <input id="hidden" type="hidden" name="_method" value="patch">
+  <input type="text" name="fname" placeholder="First Name:">
+  <input type="text" name="lname" placeholder="Last Name:">
+  <input type="text" name="email" placeholder="Email:">
+  <input type="text" name="password" placeholder="Password:">
+
+  <input type="submit" value="update" class="button">
+</form>

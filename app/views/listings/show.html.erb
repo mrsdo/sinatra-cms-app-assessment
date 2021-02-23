@@ -1,0 +1,13 @@
+<h1>Listings show page</h1>
+<h3>Delete for: <h2 class="confirm"><%= @listing.name %></h2></h3>
+
+<p>
+  <form action="/listings/<%= @listing.id %>/delete" method="POST">
+    <input type="hidden" name="_method" value="DELETE">
+    <input type="submit" value="Delete">
+  </form>
+<br />
+
+<p>
+<a href="/listings/<%=@listing.id%>/edit">Edit Listing </a>
+</p>

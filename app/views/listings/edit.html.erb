@@ -1,0 +1,8 @@
+<h1>Editing your Listings</h1>
+<h3>Edit for: <h2 class="confirm"><%= @listing.name %></h2></h3>
+
+<form action="/listings/<%= @listing.id %>" method="post">
+  <input id="hidden" type="hidden" name="_method" value="patch">
+  <textarea type="text" name="chore" placeholder="Updated listing text"></textarea>
+  <input type="submit" value="update">
+</form>

@@ -1,0 +1,6 @@
+
+.DS_Store
+.idea/aws.xml
+*.iml
+.idea/sinatra-cms-app-assessment.iml
+*.iml
